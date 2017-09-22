@@ -19,7 +19,7 @@
                 </div>
                 <div class="details">
                     <div class="number">
-                        <span data-counter="counterup" :data-value="statistics">0</span>
+                        <span data-counter="counterup" :data-value="1917">0</span>
                     </div>
                     <div class="desc"> 统计信息1 </div>
                 </div>

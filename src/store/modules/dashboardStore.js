@@ -1,4 +1,4 @@
-import { getStatistics } from '../../service/dashboard'
+import { getStatistics } from '@/service/dashboard'
 import * as TYPE from '../actionType/dashboardType'
 
 const state = {

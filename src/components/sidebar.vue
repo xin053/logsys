@@ -44,29 +44,46 @@
                     <h3 class="uppercase">Home</h3>
                 </li>
                 <li class="nav-item start active open"> <!--注意其子菜单都要设置active open -->
-                    <a href="javascript:;" class="nav-link nav-toggle">
+                    <router-link :to="{name: 'Dashboard'}" class="nav-link ">
                         <i class="icon-home"></i>
                         <span class="title">Dashboard</span>
-                    </a>
-                </li>
-                <li class="heading">
-                    <h3 class="uppercase">Others</h3>
+                    </router-link>
                 </li>
                 <li class="nav-item">
                     <a href="javascript:;" class="nav-link nav-toggle">
-                        <i class="icon-layers"></i>
-                        <span class="title">Page Layouts</span>
-                        <span class="selected"></span>
-                        <span class="arrow open"></span>
+                        <i class="fa fa-file-o"></i>
+                        <span class="title">Logs</span>
+                        <span class="arrow"></span>
                     </a>
                     <ul class="sub-menu">
                         <li class="nav-item">
-                            <a href="layout_blank_page.html" class="nav-link ">
-                                <span class="title">Blank Page</span>
-                                <span class="selected"></span>
-                            </a>
+                            <router-link :to="{name: 'DatabaseLog'}" replace class="nav-link ">
+                                <i class="fa fa-database"></i>
+                                <span class="title">数据库日志</span>
+                            </router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link :to="{name: 'GatewayLog'}" class="nav-link ">
+                                <i class="fa fa-star"></i>
+                                <span class="title">网关日志</span>
+                            </router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link :to="{name: 'WebLog'}" class="nav-link ">
+                                <i class="fa fa-globe"></i>
+                                <span class="title">web日志日志</span>
+                            </router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link :to="{name: 'ServerLog'}" class="nav-link ">
+                                <i class="fa fa-server"></i>
+                                <span class="title">服务器日志</span>
+                            </router-link>
                         </li>
                     </ul>
+                </li>
+                <li class="heading">
+                    <h3 class="uppercase">Others</h3>
                 </li>
                 <li class="nav-item  ">
                     <a href="javascript:;" class="nav-link nav-toggle">
@@ -111,9 +128,9 @@
                             </a>
                             <ul class="sub-menu">
                                 <li class="nav-item">
-                                    <a href="javascript:;" target="_blank" class="nav-link">
+                                    <a href="javascript:;" target="_blank" class="nav-link nav-toggle">
                                         <i class="icon-user"></i> Arrow Toggle
-                                        <span class="arrow nav-toggle"></span>
+                                        <span class="arrow"></span>
                                     </a>
                                     <ul class="sub-menu">
                                         <li class="nav-item">
@@ -145,9 +162,9 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="javascript:;" target="_blank" class="nav-link">
+                            <a href="javascript:;" target="_blank" class="nav-link nav-toggle">
                                 <i class="icon-globe"></i> Arrow Toggle
-                                <span class="arrow nav-toggle"></span>
+                                <span class="arrow"></span>
                             </a>
                             <ul class="sub-menu">
                                 <li class="nav-item">

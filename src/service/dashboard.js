@@ -1,7 +1,7 @@
 /**
  * dashborad页面中涉及到的数据请求
  */
-import { baseUrl } from '../config'
+import { baseUrl } from '@/config'
 import axios from 'axios'
 
 

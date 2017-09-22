@@ -6,6 +6,10 @@ table>tbody>tr>td{
     text-align: center;
 }
 
+table>tfoot>tr>th{
+    text-align: center;
+}
+
 table>tbody>tr>td>.badge{
     float: right;
 }
