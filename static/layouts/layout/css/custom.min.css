@@ -83,3 +83,7 @@ table>tbody>tr>td>.badge{
 .table > tfoot > tr.success > td,
 .table > tfoot > tr.success > th {
     background-color: #92D050; }
+
+.padding-top-4 {
+    padding-top: 4px;
+}

@@ -1,437 +1,300 @@
 <template>
-  <div>
-    <!-- BEGIN PAGE TITLE-->
-    <h1 class="page-title"> 一级标题
-      <small>二级标题</small>
-    </h1>
-    <!-- END PAGE TITLE-->
-    <!-- END PAGE HEADER-->
-    <div class="alert alert-warning alert-dismissable">
-      <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
-      <strong>Warning!</strong> 这是一条提示消息
-    </div>
+    <div>
+        <!-- BEGIN PAGE TITLE-->
+        <h1 class="page-title"> 一级标题
+            <small>二级标题</small>
+        </h1>
+        <!-- END PAGE TITLE-->
+        <!-- END PAGE HEADER-->
+        <div class="alert alert-warning alert-dismissable">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
+            <i class="fa-lg fa fa-exclamation"></i>
+            <strong>Warning!</strong> 这是一条提示消息
+        </div>
 
-    <div class="portlet box green">
-                                    <div class="portlet-title">
-                                        <div class="caption">
-                                            <i class="fa fa-globe"></i>Buttons </div>
-                                        <div class="tools"> </div>
-                                    </div>
-                                    <div class="portlet-body">
-                                        <table class="table table-striped table-bordered table-hover" id="sample_2">
-                                            <thead>
-                                                <tr>
-                                                    <th> Rendering engine </th>
-                                                    <th> Browser </th>
-                                                    <th> Platform(s) </th>
-                                                    <th> Engine version </th>
-                                                    <th> CSS grade </th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td> Trident </td>
-                                                    <td> Internet Explorer 4.0 </td>
-                                                    <td> Win 95+ </td>
-                                                    <td> 4 </td>
-                                                    <td> X </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> Trident </td>
-                                                    <td> Internet Explorer 5.0 </td>
-                                                    <td> Win 95+ </td>
-                                                    <td> 5 </td>
-                                                    <td> C </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> Trident </td>
-                                                    <td> Internet Explorer 5.5 </td>
-                                                    <td> Win 95+ </td>
-                                                    <td> 5.5 </td>
-                                                    <td> A </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> Trident </td>
-                                                    <td> Internet Explorer 6 </td>
-                                                    <td> Win 98+ </td>
-                                                    <td> 6 </td>
-                                                    <td> A </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> Trident </td>
-                                                    <td> Internet Explorer 7 </td>
-                                                    <td> Win XP SP2+ </td>
-                                                    <td> 7 </td>
-                                                    <td> A </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> Trident </td>
-                                                    <td> AOL browser (AOL desktop) </td>
-                                                    <td> Win XP </td>
-                                                    <td> 6 </td>
-                                                    <td> A </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> Gecko </td>
-                                                    <td> Firefox 1.0 </td>
-                                                    <td> Win 98+ / OSX.2+ </td>
-                                                    <td> 1.7 </td>
-                                                    <td> A </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> Gecko </td>
-                                                    <td> Firefox 1.5 </td>
-                                                    <td> Win 98+ / OSX.2+ </td>
-                                                    <td> 1.8 </td>
-                                                    <td> A </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> Gecko </td>
-                                                    <td> Firefox 2.0 </td>
-                                                    <td> Win 98+ / OSX.2+ </td>
-                                                    <td> 1.8 </td>
-                                                    <td> A </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> Gecko </td>
-                                                    <td> Firefox 3.0 </td>
-                                                    <td> Win 2k+ / OSX.3+ </td>
-                                                    <td> 1.9 </td>
-                                                    <td> A </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> Gecko </td>
-                                                    <td> Camino 1.0 </td>
-                                                    <td> OSX.2+ </td>
-                                                    <td> 1.8 </td>
-                                                    <td> A </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> Gecko </td>
-                                                    <td> Camino 1.5 </td>
-                                                    <td> OSX.3+ </td>
-                                                    <td> 1.8 </td>
-                                                    <td> A </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> Gecko </td>
-                                                    <td> Netscape 7.2 </td>
-                                                    <td> Win 95+ / Mac OS 8.6-9.2 </td>
-                                                    <td> 1.7 </td>
-                                                    <td> A </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> Gecko </td>
-                                                    <td> Netscape Browser 8 </td>
-                                                    <td> Win 98SE+ </td>
-                                                    <td> 1.7 </td>
-                                                    <td> A </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> Gecko </td>
-                                                    <td> Netscape Navigator 9 </td>
-                                                    <td> Win 98+ / OSX.2+ </td>
-                                                    <td> 1.8 </td>
-                                                    <td> A </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> Gecko </td>
-                                                    <td> Mozilla 1.0 </td>
-                                                    <td> Win 95+ / OSX.1+ </td>
-                                                    <td> 1 </td>
-                                                    <td> A </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> Gecko </td>
-                                                    <td> Mozilla 1.1 </td>
-                                                    <td> Win 95+ / OSX.1+ </td>
-                                                    <td> 1.1 </td>
-                                                    <td> A </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> Gecko </td>
-                                                    <td> Mozilla 1.2 </td>
-                                                    <td> Win 95+ / OSX.1+ </td>
-                                                    <td> 1.2 </td>
-                                                    <td> A </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> Gecko </td>
-                                                    <td> Mozilla 1.3 </td>
-                                                    <td> Win 95+ / OSX.1+ </td>
-                                                    <td> 1.3 </td>
-                                                    <td> A </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> Gecko </td>
-                                                    <td> Mozilla 1.4 </td>
-                                                    <td> Win 95+ / OSX.1+ </td>
-                                                    <td> 1.4 </td>
-                                                    <td> A </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> Gecko </td>
-                                                    <td> Mozilla 1.5 </td>
-                                                    <td> Win 95+ / OSX.1+ </td>
-                                                    <td> 1.5 </td>
-                                                    <td> A </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> Gecko </td>
-                                                    <td> Mozilla 1.6 </td>
-                                                    <td> Win 95+ / OSX.1+ </td>
-                                                    <td> 1.6 </td>
-                                                    <td> A </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> Gecko </td>
-                                                    <td> Mozilla 1.7 </td>
-                                                    <td> Win 98+ / OSX.1+ </td>
-                                                    <td> 1.7 </td>
-                                                    <td> A </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> Gecko </td>
-                                                    <td> Mozilla 1.8 </td>
-                                                    <td> Win 98+ / OSX.1+ </td>
-                                                    <td> 1.8 </td>
-                                                    <td> A </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> Gecko </td>
-                                                    <td> Seamonkey 1.1 </td>
-                                                    <td> Win 98+ / OSX.2+ </td>
-                                                    <td> 1.8 </td>
-                                                    <td> A </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> Gecko </td>
-                                                    <td> Epiphany 2.20 </td>
-                                                    <td> Gnome </td>
-                                                    <td> 1.8 </td>
-                                                    <td> A </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> Webkit </td>
-                                                    <td> Safari 1.2 </td>
-                                                    <td> OSX.3 </td>
-                                                    <td> 125.5 </td>
-                                                    <td> A </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> Webkit </td>
-                                                    <td> Safari 1.3 </td>
-                                                    <td> OSX.3 </td>
-                                                    <td> 312.8 </td>
-                                                    <td> A </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> Webkit </td>
-                                                    <td> Safari 2.0 </td>
-                                                    <td> OSX.4+ </td>
-                                                    <td> 419.3 </td>
-                                                    <td> A </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> Webkit </td>
-                                                    <td> Safari 3.0 </td>
-                                                    <td> OSX.4+ </td>
-                                                    <td> 522.1 </td>
-                                                    <td> A </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> Webkit </td>
-                                                    <td> OmniWeb 5.5 </td>
-                                                    <td> OSX.4+ </td>
-                                                    <td> 420 </td>
-                                                    <td> A </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> Webkit </td>
-                                                    <td> iPod Touch / iPhone </td>
-                                                    <td> iPod </td>
-                                                    <td> 420.1 </td>
-                                                    <td> A </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> Webkit </td>
-                                                    <td> S60 </td>
-                                                    <td> S60 </td>
-                                                    <td> 413 </td>
-                                                    <td> A </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> Presto </td>
-                                                    <td> Opera 7.0 </td>
-                                                    <td> Win 95+ / OSX.1+ </td>
-                                                    <td> - </td>
-                                                    <td> A </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> Presto </td>
-                                                    <td> Opera 7.5 </td>
-                                                    <td> Win 95+ / OSX.2+ </td>
-                                                    <td> - </td>
-                                                    <td> A </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> Presto </td>
-                                                    <td> Opera 8.0 </td>
-                                                    <td> Win 95+ / OSX.2+ </td>
-                                                    <td> - </td>
-                                                    <td> A </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> Presto </td>
-                                                    <td> Opera 8.5 </td>
-                                                    <td> Win 95+ / OSX.2+ </td>
-                                                    <td> - </td>
-                                                    <td> A </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> Presto </td>
-                                                    <td> Opera 9.0 </td>
-                                                    <td> Win 95+ / OSX.3+ </td>
-                                                    <td> - </td>
-                                                    <td> A </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> Presto </td>
-                                                    <td> Opera 9.2 </td>
-                                                    <td> Win 88+ / OSX.3+ </td>
-                                                    <td> - </td>
-                                                    <td> A </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> Presto </td>
-                                                    <td> Opera 9.5 </td>
-                                                    <td> Win 88+ / OSX.3+ </td>
-                                                    <td> - </td>
-                                                    <td> A </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> Presto </td>
-                                                    <td> Opera for Wii </td>
-                                                    <td> Wii </td>
-                                                    <td> - </td>
-                                                    <td> A </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> Presto </td>
-                                                    <td> Nokia N800 </td>
-                                                    <td> N800 </td>
-                                                    <td> - </td>
-                                                    <td> A </td>
-                                                </tr>
-                                                <tr>
-                                                    <td> Presto </td>
-                                                    <td> Nintendo DS browser </td>
-                                                    <td> Nintendo DS </td>
-                                                    <td> 8.5 </td>
-                                                    <td> C/A
-                                                        <sup>1</sup>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-  </div>
+        <div class="portlet blue box">
+            <div class="portlet-title">
+                <div class="caption">
+                    <i class="fa fa-gear"></i>Tools </div>
+                <div class="tools"> </div>
+            </div>
+            <div class="portlet-body">
+                <table class="table table-striped table-bordered table-hover" id="sample">
+                    <thead>
+                        <tr>
+                            <th>
+                                <i class="fa fa-briefcase"></i> id </th>
+                            <th> username </th>
+                            <th> loginipster </th>
+                            <th> type </th>
+                            <th> logintimestr </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>
 import { mapGetters } from 'vuex'
 export default {
-  data() {
-    return {
+    data() {
+        return {
+        }
+    },
+    mounted() {
+        TableDatatablesButtons.init();
     }
-  },
-  mounted() {
-    TableDatatablesButtons.init();
-  }
 }
 
-var TableDatatablesButtons = function () {
+var TableDatatablesButtons = function() {
 
-    var initTable = function () {
-        var table = $('#sample_2');
+    var initTable = function() {
+        if (oTable == null) {
+            var table = $('#sample');
 
-        var oTable = table.dataTable({
-
-            // Internationalisation. For more info refer to http://datatables.net/manual/i18n
-            "language": {
-                "aria": {
-                    "sortAscending": ": activate to sort column ascending",
-                    "sortDescending": ": activate to sort column descending"
-                },
-                "emptyTable": "No data available in table",
-                "info": "Showing _START_ to _END_ of _TOTAL_ entries",
-                "infoEmpty": "No entries found",
-                "infoFiltered": "(filtered1 from _MAX_ total entries)",
-                "lengthMenu": "_MENU_ entries",
-                "search": "Search:",
-                "zeroRecords": "No matching records found"
-            },
-
-            // Or you can use remote translation file
-            //"language": {
-            //   url: '//cdn.datatables.net/plug-ins/3cfcc339e89/i18n/Portuguese.json'
-            //},
-
-
-            buttons: [
-                { extend: 'print', className: 'btn dark btn-outline' },
-                { extend: 'copy', className: 'btn red btn-outline' },
-                { extend: 'pdf', className: 'btn green btn-outline' },
-                { extend: 'excel', className: 'btn yellow btn-outline ' },
-                { extend: 'csv', className: 'btn purple btn-outline ' },
-                { extend: 'colvis', className: 'btn dark btn-outline', text: 'Columns'},
-                {
-                    text: 'Reload',
-                    className: 'btn default',
-                    action: function ( e, dt, node, config ) {
-                        //dt.ajax.reload();
-                        alert('Custom Button');
-                    }
+            var fixedHeaderOffset = 0;
+            if (App.getViewPort().width < App.getResponsiveBreakpoint('md')) {
+                if ($('.page-header').hasClass('page-header-fixed-mobile')) {
+                    fixedHeaderOffset = $('.page-header').outerHeight(true);
                 }
-            ],
+            } else if ($('body').hasClass('page-header-menu-fixed')) { // admin 3 fixed header menu mode
+                fixedHeaderOffset = $('.page-header-menu').outerHeight(true);
+            } else if ($('body').hasClass('page-header-top-fixed')) { // admin 3 fixed header top mode
+                fixedHeaderOffset = $('.page-header-top').outerHeight(true);
+            } else if ($('.page-header').hasClass('navbar-fixed-top')) {
+                fixedHeaderOffset = $('.page-header').outerHeight(true);
+            } else if ($('body').hasClass('page-header-fixed')) {
+                fixedHeaderOffset = 64; // admin 5 fixed height
+            }
 
-            // setup responsive extension: http://datatables.net/extensions/responsive/
-            responsive: true,
+            $.fn.dataTable.ext.errMode = 'throw';
+            var oTable = table.dataTable({
+                //datatables设置详见 https://datatables.net/reference/option/
+                // Internationalisation. For more info refer to http://datatables.net/manual/i18n
+                "language": {
+                    "aria": {
+                        "sortAscending": ": 以升序排列此列",
+                        "sortDescending": ": 以降序排列此列"
+                    },
+                    "emptyTable": "没有找到记录",
+                    "info": "当前显示 _START_ 到 _END_ 条，共 _TOTAL_ 条记录",
+                    "infoEmpty": "当前显示 0 到 0 条，共 0 条记录",
+                    "infoFiltered": "(从 _MAX_ 条记录中筛选)",
+                    "lengthMenu": "每页 _MENU_ 条记录",
+                    "search": "搜索:",
+                    "processing": "加载中...",
+                    "zeroRecords": "无匹配记录",
+                    "paginate": {
+                        "previous": "上一页",
+                        "next": "下一页",
+                        "last": "最后一页",
+                        "first": "第一页"
+                    }
+                },
 
-            //"ordering": false, disable column ordering 
-            //"paging": false, disable pagination
+                // Or you can use remote translation file
+                //"language": {
+                //   url: '//cdn.datatables.net/plug-ins/3cfcc339e89/i18n/Portuguese.json'
+                //},
+                paging: true,
+                autoWidth: true,//自动计算列宽度
+                serverSide: true,//开启服务器模式
+                processing: true,//显示正在加载
+                ordering: true,//可以排序
+                searching: false,//可以搜索
+                stateSave: true,//保存分页,
+                orderClasses: true,//高亮排序的列
+                retrieve: false,//是否重用已有的datatables
+                destroy: false,//是否重新创建datatables
+                select: true,
 
-            "order": [
-                [0, 'asc']
-            ],
+                search: {
+                    "caseInsensitive": false,
+                    "regex": false//是否使用正则搜索
+                },
 
-            "lengthMenu": [
-                [5, 10, 15, 20, -1],
-                [5, 10, 15, 20, "All"] // change per page values here
-            ],
-            // set the initial value
-            "pageLength": 10,
+                // "AjaxSource": "http://127.0.0.1:5000",
+                // "fnServerData": function (sSource, aoData, fnCallback) {
+                //             aoData.push({ "name": "CUSTOMER_ID", "value": "1" });
+                //             aoData.push({ "name": "CUSTOMER_NAME", "value": "zzx" });
+                //             $.ajax({
+                //                 "dataType": 'application/json',
+                //                 "type": "POST",
+                //                 "url": sSource,
+                //                 "data": aoData,
+                //                 "success": fnCallback
+                //             })
+                //         },
 
-            "dom": "<'row' <'col-md-12'B>><'row'<'col-md-6 col-sm-12'l><'col-md-6 col-sm-12'f>r><'table-scrollable't><'row'<'col-md-5 col-sm-12'i><'col-md-7 col-sm-12'p>>", // horizobtal scrollable datatable
+                // columnDefs: [
+                //     { orderable: true, className: 'reorder', targets: 0 },
+                //     { orderable: true, targets: '_all' }
+                // ],
+                //"paging": false, disable pagination
 
-            // Uncomment below line("dom" parameter) to fix the dropdown overflow issue in the datatable cells. The default datatable layout
-            // setup uses scrollable div(table-scrollable) with overflow:auto to enable vertical scroll(see: assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js). 
-            // So when dropdowns used the scrollable div should be removed. 
-            //"dom": "<'row' <'col-md-12'T>><'row'<'col-md-6 col-sm-12'l><'col-md-6 col-sm-12'f>r>t<'row'<'col-md-5 col-sm-12'i><'col-md-7 col-sm-12'p>>",
-        });
+                //columnDefs和columns共用大部分options
+                columnDefs: [
+                    {
+                        "targets": 'nosort',  //目标未样式名未nosort的列
+                        // "className": "my_class",//设置目标类的样式
+                        "orderable": false    //包含上样式名‘nosort’的禁止排序
+                    },
+                    {
+                        "targets": 'nosearch',
+                        "searchable": false    //包含上样式名‘nosort’的禁止排序
+                    }
+                ],
+
+                //https://datatables.net/manual/server-side
+                ajax: function(data, callback, settings) {
+                    //封装请求参数
+                    console.log(data)
+                    //ajax请求数据
+                    $.ajax({
+                        type: "post",
+                        url: "http://127.0.0.1:5000",
+                        cache: false,  //禁用缓存
+                        data: data,  //传入组装的参数
+                        dataType: "json",
+                        success: function(result) {
+                            callback(result);
+                        },
+                        error: function(msg) {
+                            //TODO 修改当前页面的提示信息
+                        }
+                    });
+                },
+                //列表表头字段
+                columns: [
+                    { "data": "id" },
+                    { "data": "username" },
+                    { "data": "loginipstr" },
+                    {
+                        "data": "type",
+                        render: function(data, type, row) {
+                            return type === "display" || type === "filter" ?
+                                '$' + data : data;
+                        },
+                        "defaultContent": "默认值",
+                        "title": "自定义标题",
+                        // "type" : "date",//设置列的类型,来控制是否可以排序和过滤等
+                        // "visible": "false",//控制该列是否可见
+                        // "width": "20%",//控制列的宽度
+                    },
+                    { "data": "logintimestr" }
+                ],
+
+                buttons: [
+                    { extend: 'print', className: 'btn dark' },
+                    { extend: 'copy', className: 'btn red' },
+                    { extend: 'pdf', className: 'btn green' },
+                    { extend: 'excel', className: 'btn yellow' },
+                    { extend: 'csv', className: 'btn purple' },
+                    { extend: 'colvis', className: 'btn default', text: 'Columns' },
+                    {
+                        text: 'Reload',
+                        className: 'btn dark',
+                        action: function(e, dt, node, config) {
+                            //dt.ajax.reload();
+                            $('#sample').dataTable().fnDraw();
+                        }
+                    }
+                ],
+
+                fixedHeader: {
+                    header: true,
+                    headerOffset: fixedHeaderOffset
+                },
+                // setup responsive extension: http://datatables.net/extensions/responsive/
+                responsive: true,
+
+                //"ordering": false, disable column ordering
+                colReorder: {
+                    reorderCallback: function() {
+                        console.log('colReorder_callback');
+                    }
+                },
+                // rowReorder: true,
+
+                order: [
+                    [0, 'asc']
+                ],
+
+                lengthMenu: [
+                    [5, 10, 20, 50, 100, 150, -1],
+                    [5, 10, 20, 50, 100, 150, "All"] // change per page values here
+                ],
+                // set the initial value
+                pageLength: 5,
+                pagingType: "bootstrap_full_number",
+
+                //http://datatables.club/reference/option/dom.html
+                dom: "<'row' <'col-md-12'B>><'row'<'#searchspan'><'col-md-6 col-sm-12'f>r><'table-scrollable't><'row'<'col-md-2 col-sm-6 padding-top-4'l><'col-md-3 col-sm-6'i><'col-md-7 col-sm-12'p>>", // horizobtal scrollable datatable
+
+                // Uncomment below line("dom" parameter) to fix the dropdown overflow issue in the datatable cells. The default datatable layout
+                // setup uses scrollable div(table-scrollable) with overflow:auto to enable vertical scroll(see: assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js). 
+                // So when dropdowns used the scrollable div should be removed.
+                //"dom": "<'row' <'col-md-12'T>><'row'<'col-md-6 col-sm-12'l><'col-md-6 col-sm-12'f>r>t<'row'<'col-md-5 col-sm-12'i><'col-md-7 col-sm-12'p>>",
+
+                //callbacks
+                // 当每一行的tr标签被创建时调用
+                // "createdRow": function ( row, data, index ) {
+                //     //行渲染回调,在这里可以对该行dom元素进行任何操作
+                //     var $btn = $('<div class="btn-group text-cen">'+
+                //             '<button type="button" class="btn btn-sm btn-primary btn-edit">修改</button>'+
+                //             '<button type="button" class="btn btn-sm btn-danger btn-del">删除</button>'+
+                //             '</div>'+
+                //             '</div>');
+                //     $('td', row).eq(3).append($btn);
+                // },
+
+                //drawCallback : datatables每次重绘时将调用
+                //initComplete : 渲染完调用
+                //preDrawCallback : 绘制前调用
+                //rowCallback : 绘制完每一行调用
+                //stateloaded ： 加载完保存的状态后调用
+
+            }).api();
+        }
     }
 
     return {
 
         //main function to initiate the module
-        init: function () {
+        init: function() {
 
             if (!jQuery().dataTable) {
                 return;
             }
 
             initTable();
+            //自定义搜索框
+            $("#searchspan").html(` <div class="row col-md-10 col-sm-12">
+                                        <div class="col-md-12 col-sm-12">
+                                            <div class="col-md-6 col-sm-6 input-group date date-picker margin-bottom-5" data-date-format="dd/mm/yyyy">
+                                                <input type="text" class="form-control form-filter input-sm" readonly name="order_date_from" placeholder="From">
+                                                <span class="input-group-btn">
+                                                    <button class="btn btn-sm default" type="button">
+                                                        <i class="fa fa-calendar"></i>
+                                                    </button>
+                                                </span>
+                                                <input type="text" class="form-control form-filter input-sm" readonly name="order_date_to" placeholder="To">
+                                                <span class="input-group-btn">
+                                                    <button class="btn btn-sm default" type="button">
+                                                        <i class="fa fa-calendar"></i>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                            <div class="clear">
+                                                <button class="btn blue" type="button">搜索</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                `);
         }
 
     };
