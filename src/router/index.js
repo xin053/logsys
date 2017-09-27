@@ -6,6 +6,7 @@ import LogsView from '@/views/logs/LogsView'
 import DatabaseLog from '@/views/logs/DatabaseLog'
 import GatewayLog from '@/views/logs/GatewayLog'
 import WebLog from '@/views/logs/WebLog'
+import SfaLog from '@/views/logs/SfaLog'
 import ServerLog from '@/views/logs/ServerLog'
 
 
@@ -43,6 +44,11 @@ export default new Router({
           path: 'WebLog',
           name: 'WebLog',
           component: WebLog
+        },
+        {
+          path: 'SfaLog',
+          name: 'SfaLog',
+          component: SfaLog
         },
         {
           path: 'ServerLog',

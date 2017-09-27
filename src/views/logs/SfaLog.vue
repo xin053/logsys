@@ -1,20 +1,19 @@
 <template>
-    <div>
-        <!-- BEGIN PAGE TITLE-->
-        <h1 class="page-title"> 数据库日志
-            <small>sqlserver中的错误日志</small>
-        </h1>
-        <!-- END PAGE TITLE-->
-        <!-- END PAGE HEADER-->
-        <div v-show="tipShow" class="alert alert-warning alert-dismissable">
-            <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
-            <i class="fa-lg fa fa-exclamation"></i>
-            <strong>Warning!</strong> 这是一条提示消息
-        </div>
-
-        <logTable :tableHeaders="tableHeaders" :searchSpan="searchSpan"></logTable>
-
+<div>
+<!-- BEGIN PAGE TITLE-->
+    <h1 class="page-title"> sfa日志
+        <small>sfa后台错误日志</small>
+    </h1>
+    <!-- END PAGE TITLE-->
+    <!-- END PAGE HEADER-->
+    <div v-show="tipShow" class="alert alert-warning alert-dismissable">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
+        <strong>Warning!</strong> 这是一条提示消息
     </div>
+
+    <logTable :tableHeaders="tableHeaders" :searchSpan="searchSpan"></logTable>
+
+</div>
 </template>
 
 <script>
@@ -72,6 +71,21 @@ export default {
     }
 }
 
+// import { mapGetters } from 'vuex'
+// export default {
+//   data () {
+//     return {
+//     }
+//   },
+//   computed: {
+// 	...mapGetters([
+// 	  'statistics'
+// 	])
+//   },
+//   mounted() {
+// 	this.$store.dispatch('getStatisticsAPI')
+//   }
+// }
 </script>
 
 <style>

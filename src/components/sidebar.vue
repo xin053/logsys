@@ -71,7 +71,13 @@
                         <li class="nav-item">
                             <router-link :to="{name: 'WebLog'}" class="nav-link ">
                                 <i class="fa fa-globe"></i>
-                                <span class="title">web日志日志</span>
+                                <span class="title">web日志</span>
+                            </router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link :to="{name: 'SfaLog'}" class="nav-link ">
+                                <i class="fa fa-globe"></i>
+                                <span class="title">sfa日志</span>
                             </router-link>
                         </li>
                         <li class="nav-item">

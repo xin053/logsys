@@ -147,8 +147,6 @@
         </div>
     </div>
 
-    {{ statistics }}
-
 </div>
 </template>
 
@@ -171,4 +169,89 @@ export default {
 </script>
 
 <style>
+table>thead>tr>th{
+    text-align: center;
+}
+
+table>tbody>tr>td{
+    text-align: center;
+}
+
+table>tfoot>tr>th{
+    text-align: center;
+}
+
+table>tbody>tr>td>.badge{
+    float: right;
+}
+
+.table > thead > tr > td.superdanger,
+.table > thead > tr > th.superdanger,
+.table > thead > tr.superdanger > td,
+.table > thead > tr.superdanger > th,
+.table > tbody > tr > td.superdanger,
+.table > tbody > tr > th.superdanger,
+.table > tbody > tr.superdanger > td,
+.table > tbody > tr.superdanger > th,
+.table > tfoot > tr > td.superdanger,
+.table > tfoot > tr > th.superdanger,
+.table > tfoot > tr.superdanger > td,
+.table > tfoot > tr.superdanger > th {
+    background-color: #C00000; }
+
+.table > thead > tr > td.danger,
+.table > thead > tr > th.danger,
+.table > thead > tr.danger > td,
+.table > thead > tr.danger > th,
+.table > tbody > tr > td.danger,
+.table > tbody > tr > th.danger,
+.table > tbody > tr.danger > td,
+.table > tbody > tr.danger > th,
+.table > tfoot > tr > td.danger,
+.table > tfoot > tr > th.danger,
+.table > tfoot > tr.danger > td,
+.table > tfoot > tr.danger > th {
+    background-color: #FF0000; }
+
+.table > thead > tr > td.warning,
+.table > thead > tr > th.warning,
+.table > thead > tr.warning > td,
+.table > thead > tr.warning > th,
+.table > tbody > tr > td.warning,
+.table > tbody > tr > th.warning,
+.table > tbody > tr.warning > td,
+.table > tbody > tr.warning > th,
+.table > tfoot > tr > td.warning,
+.table > tfoot > tr > th.warning,
+.table > tfoot > tr.warning > td,
+.table > tfoot > tr.warning > th {
+    background-color: #FFC000; }
+
+.table > thead > tr > td.littlewarning,
+.table > thead > tr > th.littlewarning,
+.table > thead > tr.littlewarning > td,
+.table > thead > tr.littlewarning > th,
+.table > tbody > tr > td.littlewarning,
+.table > tbody > tr > th.littlewarning,
+.table > tbody > tr.littlewarning > td,
+.table > tbody > tr.littlewarning > th,
+.table > tfoot > tr > td.littlewarning,
+.table > tfoot > tr > th.littlewarning,
+.table > tfoot > tr.littlewarning > td,
+.table > tfoot > tr.littlewarning > th {
+    background-color: #FFFF00; }
+
+.table > thead > tr > td.success,
+.table > thead > tr > th.success,
+.table > thead > tr.success > td,
+.table > thead > tr.success > th,
+.table > tbody > tr > td.success,
+.table > tbody > tr > th.success,
+.table > tbody > tr.success > td,
+.table > tbody > tr.success > th,
+.table > tfoot > tr > td.success,
+.table > tfoot > tr > th.success,
+.table > tfoot > tr.success > td,
+.table > tfoot > tr.success > th {
+    background-color: #92D050; }
 </style>
