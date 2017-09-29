@@ -157,17 +157,19 @@ var TableDatatablesButtons = function() {
                 //https://datatables.net/manual/server-side
                 ajax: function(data, callback, settings) {
                     //封装请求参数
-                    data.log_date_from = $("#log_date_from").val()
-                    data.log_date_to = $("#log_date_to").val()
-                    data.enterprise_number = $("#enterprise_number").val()
-                    data.enterprise_name = $("#enterprise_name").val()
-                    data.ip = $("#ip").val()
-                    data.datasource_id = $("#datasource_id").val()
+                    data.query = {}
+                    data.query.log_date_from = $("#log_date_from").val()
+                    data.query.log_date_to = $("#log_date_to").val()
+                    data.query.enterprise_number = $("#enterprise_number").val()
+                    data.query.enterprise_name = $("#enterprise_name").val()
+                    data.query.ip = $("#ip").val()
+                    data.query.datasource_id = $("#datasource_id").val()
+                    data.querystr = "log_date_from log_date_to enterprise_number enterprise_name ip datasource_id"
                     console.log(data)
                     //ajax请求数据
                     $.ajax({
                         type: "post",
-                        url: "http://127.0.0.1:5000",
+                        url: "http://127.0.0.1:5001/gateway",
                         cache: false,  //禁用缓存
                         data: data,  //传入组装的参数
                         dataType: "json",
@@ -181,22 +183,28 @@ var TableDatatablesButtons = function() {
                 },
                 //列表表头字段
                 columns: [
-                    { "data": "id" },
-                    { "data": "username" },
-                    { "data": "loginipstr" },
+                    { "data": "logtime" },
+                    { "data": "enterprisenumber" },
+                    { "data": "enterprisename" },
                     {
-                        "data": "type",
+                        "data": "ip",
                         render: function(data, type, row) {
                             return type === "display" || type === "filter" ?
-                                '$' + data : data;
+                                data : data;
                         },
                         "defaultContent": "默认值",
-                        "title": "自定义标题",
+                        "title": "ip地址",
                         // "type" : "date",//设置列的类型,来控制是否可以排序和过滤等
                         // "visible": "false",//控制该列是否可见
                         // "width": "20%",//控制列的宽度
                     },
-                    { "data": "logintimestr" }
+                    { "data": "vmname" },
+                    { "data": "ostype" },
+                    { "data": "error" },
+                    { "data": "type" },
+                    { "data": "gateversion" },
+                    { "data": "module" },
+                    { "data": "logcontent" }
                 ],
 
                 buttons: [
@@ -240,7 +248,7 @@ var TableDatatablesButtons = function() {
                     [5, 10, 20, 50, 100, 150, "All"] // change per page values here
                 ],
                 // set the initial value
-                pageLength: 5,
+                pageLength: 10,
                 pagingType: "bootstrap_full_number",
 
                 //http://datatables.club/reference/option/dom.html

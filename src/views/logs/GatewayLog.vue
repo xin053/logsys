@@ -26,11 +26,17 @@ export default {
         return {
             tipShow: false,
             tableHeaders: {
-                "编号": 'fa fa-briefcase',
-                "时间": 'fa fa-briefcase',
+                "日志时间": 'fa fa-briefcase',
                 "企业e号": 'fa fa-briefcase',
                 "企业名称": 'fa fa-briefcase',
-                "IP": 'fa fa-briefcase'
+                "IP": 'fa fa-briefcase',
+                "虚拟机名称": 'fa fa-briefcase',
+                "操作系统类型": 'fa fa-briefcase',
+                "错误码": 'fa fa-briefcase',
+                "网关服务类型": 'fa fa-briefcase',
+                "网关版本": 'fa fa-briefcase',
+                "调用接口": 'fa fa-briefcase',
+                "完整日志内容": 'fa fa-briefcase'
             },
             searchSpan: `<div class="row col-md-12 col-sm-12">
                             <div class="form-inline col-md-12 col-sm-12 form-group">
