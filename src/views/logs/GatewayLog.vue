@@ -34,6 +34,7 @@ export default {
                 "操作系统类型": 'fa fa-briefcase',
                 "错误码": 'fa fa-briefcase',
                 "错误类型": 'fa fa-briefcase',
+                "服务": 'fa fa-briefcase',
                 "网关版本": 'fa fa-briefcase',
                 "调用接口": 'fa fa-briefcase',
                 "完整日志内容": 'fa fa-briefcase'
@@ -66,7 +67,10 @@ export default {
                                     <input type="text" class="form-control form-filter input-sm" id="ip" placeholder="搜索IP">
                                 </div>
                                 <div class="input-group col-sm-1 col-lg-1">
-                                    <input type="text" class="form-control form-filter input-sm" id="type" placeholder="错误类型">
+                                    <input type="text" class="form-control form-filter input-sm" id="serverrole" placeholder="错误类型">
+                                </div>
+                                <div class="input-group col-sm-1 col-lg-1">
+                                    <input type="text" class="form-control form-filter input-sm" id="type" placeholder="服务">
                                 </div>
                                 <div class="input-group col-sm-1 col-lg-1">
                                     <input type="text" class="form-control form-filter input-sm" id="datasource_id" placeholder="搜索数据源id">

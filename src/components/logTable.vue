@@ -163,9 +163,10 @@ var TableDatatablesButtons = function() {
                     data.query.enterprisenumber = $("#enterprise_number").val()
                     data.query.enterprisename = $("#enterprise_name").val()
                     data.query.ip = $("#ip").val()
+                    data.query.serverrole = $("#serverrole").val()
                     data.query.type = $("#type").val()
                     data.query.datasourceid = $("#datasource_id").val()
-                    data.querystr = "log_date_from log_date_to enterprisenumber enterprisename ip type datasourceid"
+                    data.querystr = "log_date_from log_date_to enterprisenumber enterprisename ip serverrole type datasourceid"
                     console.log(data)
                     //ajax请求数据
                     $.ajax({
@@ -202,6 +203,7 @@ var TableDatatablesButtons = function() {
                     { "data": "vmname" },
                     { "data": "ostype" },
                     { "data": "error" },
+                    { "data": "serverrole" },
                     { "data": "type" },
                     { "data": "gateversion" },
                     { "data": "module" },
