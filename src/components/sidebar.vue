@@ -56,19 +56,19 @@
                         <span class="arrow"></span>
                     </a>
                     <ul class="sub-menu">
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <router-link :to="{name: 'DatabaseLog'}" replace class="nav-link ">
                                 <i class="fa fa-database"></i>
                                 <span class="title">数据库日志</span>
                             </router-link>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
                             <router-link :to="{name: 'GatewayLog'}" class="nav-link ">
                                 <i class="fa fa-star"></i>
-                                <span class="title">网关日志</span>
+                                <span class="title">错误日志</span>
                             </router-link>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <router-link :to="{name: 'WebLog'}" class="nav-link ">
                                 <i class="fa fa-globe"></i>
                                 <span class="title">web日志</span>
@@ -85,7 +85,7 @@
                                 <i class="fa fa-server"></i>
                                 <span class="title">服务器日志</span>
                             </router-link>
-                        </li>
+                        </li> -->
                     </ul>
                 </li>
                 <li class="heading">

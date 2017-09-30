@@ -2,7 +2,7 @@
     <div class="portlet blue box">
         <div class="portlet-title">
             <div class="caption">
-                <i class="fa fa-gear"></i>Tools </div>
+                <i class="fa fa-gear"></i>错误日志 </div>
             <div class="tools"> </div>
         </div>
         <div class="portlet-body">
@@ -160,11 +160,12 @@ var TableDatatablesButtons = function() {
                     data.query = {}
                     data.query.log_date_from = $("#log_date_from").val()
                     data.query.log_date_to = $("#log_date_to").val()
-                    data.query.enterprise_number = $("#enterprise_number").val()
-                    data.query.enterprise_name = $("#enterprise_name").val()
+                    data.query.enterprisenumber = $("#enterprise_number").val()
+                    data.query.enterprisename = $("#enterprise_name").val()
                     data.query.ip = $("#ip").val()
-                    data.query.datasource_id = $("#datasource_id").val()
-                    data.querystr = "log_date_from log_date_to enterprise_number enterprise_name ip datasource_id"
+                    data.query.type = $("#type").val()
+                    data.query.datasourceid = $("#datasource_id").val()
+                    data.querystr = "log_date_from log_date_to enterprisenumber enterprisename ip type datasourceid"
                     console.log(data)
                     //ajax请求数据
                     $.ajax({
@@ -208,20 +209,20 @@ var TableDatatablesButtons = function() {
                 ],
 
                 buttons: [
-                    { extend: 'print', className: 'btn dark' },
-                    { extend: 'copy', className: 'btn red' },
-                    { extend: 'pdf', className: 'btn green' },
-                    { extend: 'excel', className: 'btn yellow' },
-                    { extend: 'csv', className: 'btn purple' },
-                    { extend: 'colvis', className: 'btn default', text: 'Columns' },
-                    {
-                        text: 'Reload',
-                        className: 'btn dark',
-                        action: function(e, dt, node, config) {
-                            //dt.ajax.reload();
-                            $('#sample').dataTable().fnDraw();
-                        }
-                    }
+                //     { extend: 'print', className: 'btn dark' },
+                //     { extend: 'copy', className: 'btn red' },
+                //     { extend: 'pdf', className: 'btn green' },
+                //     { extend: 'excel', className: 'btn yellow' },
+                //     { extend: 'csv', className: 'btn purple' },
+                //     { extend: 'colvis', className: 'btn default', text: 'Columns' },
+                //     {
+                //         text: 'Reload',
+                //         className: 'btn dark',
+                //         action: function(e, dt, node, config) {
+                //             //dt.ajax.reload();
+                //             $('#sample').dataTable().fnDraw();
+                //         }
+                //     }
                 ],
 
                 fixedHeader: {

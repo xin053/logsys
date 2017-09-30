@@ -1,9 +1,9 @@
 <template>
     <div>
         <!-- BEGIN PAGE TITLE-->
-        <h1 class="page-title"> 数据库日志
+        <!-- <h1 class="page-title"> 数据库日志
             <small>sqlserver中的错误日志</small>
-        </h1>
+        </h1> -->
         <!-- END PAGE TITLE-->
         <!-- END PAGE HEADER-->
         <div v-show="tipShow" class="alert alert-warning alert-dismissable">
