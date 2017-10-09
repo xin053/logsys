@@ -3,11 +3,7 @@ import Router from 'vue-router'
 import Dashboard from '@/views/Dashboard'
 import Login from '@/views/Login'
 import LogsView from '@/views/logs/LogsView'
-import DatabaseLog from '@/views/logs/DatabaseLog'
-import GatewayLog from '@/views/logs/GatewayLog'
-import WebLog from '@/views/logs/WebLog'
-import SfaLog from '@/views/logs/SfaLog'
-import ServerLog from '@/views/logs/ServerLog'
+import ErrorLog from '@/views/logs/ErrorLog'
 
 
 Vue.use(Router)
@@ -30,30 +26,9 @@ export default new Router({
       component: LogsView,
       children: [
         {
-          path: 'DatabaseLog',
-          name: 'DatabaseLog',
-          component: DatabaseLog,
-          meta: { keepAlive: false }
-        },
-        {
-          path: 'GatewayLog',
-          name: 'GatewayLog',
-          component: GatewayLog
-        },
-        {
-          path: 'WebLog',
-          name: 'WebLog',
-          component: WebLog
-        },
-        {
-          path: 'SfaLog',
-          name: 'SfaLog',
-          component: SfaLog
-        },
-        {
-          path: 'ServerLog',
-          name: 'ServerLog',
-          component: ServerLog
+          path: 'ErrorLog',
+          name: 'ErrorLog',
+          component: ErrorLog
         }
       ]
     }

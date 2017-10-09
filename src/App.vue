@@ -7,7 +7,7 @@
           <sidebar></sidebar>
           <div class="page-content-wrapper">
             <div class="page-content">
-              <theme-panel></theme-panel>
+              <!-- <theme-panel></theme-panel> -->
               <page-bar></page-bar>
               <router-view></router-view>
             </div>

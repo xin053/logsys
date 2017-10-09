@@ -2,12 +2,12 @@
 <!-- BEGIN PAGE BAR -->
     <div class="page-bar">
         <ul class="page-breadcrumb">
-            <li>
+            <!-- <li>
                 <a href="index.html">Home</a>
                 <i class="fa fa-circle"></i>
-            </li>
+            </li> -->
             <li>
-                <span>Dashboard</span>
+                <span>主面板</span>
             </li>
         </ul>
         <div class="page-toolbar">

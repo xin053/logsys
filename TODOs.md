@@ -1,13 +1,13 @@
-1. sidebar颜色切换
 2. pagebar与当前页面关联
 3. 主题设置后其他页面主题也变换
-4. 要不要quick sidebar
-5. logs页面表头图标选择
-
-8. 完成开发后修改webpack中删除sourcemaps
-9. 测试yarn build及其原理
+4. logs页面表头图标选择
+5. 完成开发后修改webpack中删除sourcemaps
+6. 测试yarn build及其原理
 
 
 ## 优先
-2. log蓝图问题
-3. 登陆页面挂上来
+1. 登陆页面挂上来
+2. sidebar颜色切换
+3. 页面顶部导航信息显示
+4. 四个主面板动态效果展示与动态数据获取
+5. log蓝图问题

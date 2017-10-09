@@ -1,14 +1,14 @@
 <template>
 <div>
 <!-- BEGIN PAGE TITLE-->
-    <h1 class="page-title"> 一级标题
+    <!-- <h1 class="page-title"> 一级标题
         <small>二级标题</small>
-    </h1>
+    </h1> -->
     <!-- END PAGE TITLE-->
     <!-- END PAGE HEADER-->
     <div class="alert alert-warning alert-dismissable">
         <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
-        <strong>Warning!</strong> 这是一条提示消息
+        <strong>Warning!</strong> 这是一条提示消息,用于提示运维周报整体情况
     </div>
 
     <div class="row">
@@ -163,7 +163,7 @@ export default {
 	])
   },
   mounted() {
-	this.$store.dispatch('getStatisticsAPI')
+	// this.$store.dispatch('getStatisticsAPI')
   }
 }
 </script>

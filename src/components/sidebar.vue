@@ -40,161 +40,22 @@
                     </form>
                     <!-- END RESPONSIVE QUICK SEARCH FORM -->
                 </li>
-                <li class="heading">
+                <!-- <li class="heading">
                     <h3 class="uppercase">Home</h3>
-                </li>
+                </li> -->
                 <li class="nav-item start active open"> <!--注意其子菜单都要设置active open -->
                     <router-link :to="{name: 'Dashboard'}" class="nav-link ">
                         <i class="icon-home"></i>
-                        <span class="title">Dashboard</span>
+                        <span class="title">主面板</span>
                     </router-link>
                 </li>
                 <li class="nav-item">
-                    <a href="javascript:;" class="nav-link nav-toggle">
+                    <router-link :to="{name: 'ErrorLog'}" class="nav-link ">
                         <i class="fa fa-file-o"></i>
-                        <span class="title">Logs</span>
-                        <span class="arrow"></span>
-                    </a>
-                    <ul class="sub-menu">
-                        <!-- <li class="nav-item">
-                            <router-link :to="{name: 'DatabaseLog'}" replace class="nav-link ">
-                                <i class="fa fa-database"></i>
-                                <span class="title">数据库日志</span>
-                            </router-link>
-                        </li> -->
-                        <li class="nav-item">
-                            <router-link :to="{name: 'GatewayLog'}" class="nav-link ">
-                                <i class="fa fa-star"></i>
-                                <span class="title">错误日志</span>
-                            </router-link>
-                        </li>
-                        <!-- <li class="nav-item">
-                            <router-link :to="{name: 'WebLog'}" class="nav-link ">
-                                <i class="fa fa-globe"></i>
-                                <span class="title">web日志</span>
-                            </router-link>
-                        </li>
-                        <li class="nav-item">
-                            <router-link :to="{name: 'SfaLog'}" class="nav-link ">
-                                <i class="fa fa-globe"></i>
-                                <span class="title">sfa日志</span>
-                            </router-link>
-                        </li>
-                        <li class="nav-item">
-                            <router-link :to="{name: 'ServerLog'}" class="nav-link ">
-                                <i class="fa fa-server"></i>
-                                <span class="title">服务器日志</span>
-                            </router-link>
-                        </li> -->
-                    </ul>
-                </li>
-                <li class="heading">
-                    <h3 class="uppercase">Others</h3>
-                </li>
-                <li class="nav-item  ">
-                    <a href="javascript:;" class="nav-link nav-toggle">
-                        <i class="icon-social-dribbble"></i>
-                        <span class="title">General</span>
-                        <span class="arrow"></span>
-                    </a>
-                    <ul class="sub-menu">
-                        <li class="nav-item  ">
-                            <a href="page_general_about.html" class="nav-link ">
-                                <i class="icon-info"></i>
-                                <span class="title">About</span>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-item  ">
-                    <a href="javascript:;" class="nav-link nav-toggle">
-                        <i class="icon-settings"></i>
-                        <span class="title">System</span>
-                        <span class="arrow"></span>
-                    </a>
-                    <ul class="sub-menu">
-                        <li class="nav-item  ">
-                            <a href="page_system_404_1.html" class="nav-link ">
-                                <span class="title">404 Page 1</span>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a href="javascript:;" class="nav-link nav-toggle">
-                        <i class="icon-folder"></i>
-                        <span class="title">Multi Level Menu</span>
-                        <span class="arrow "></span>
-                    </a>
-                    <ul class="sub-menu">
-                        <li class="nav-item">
-                            <a href="javascript:;" class="nav-link nav-toggle">
-                                <i class="icon-settings"></i> Item 1
-                                <span class="arrow"></span>
-                            </a>
-                            <ul class="sub-menu">
-                                <li class="nav-item">
-                                    <a href="javascript:;" target="_blank" class="nav-link nav-toggle">
-                                        <i class="icon-user"></i> Arrow Toggle
-                                        <span class="arrow"></span>
-                                    </a>
-                                    <ul class="sub-menu">
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link">
-                                                <i class="icon-power"></i> Sample Link 1</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link">
-                                                <i class="icon-paper-plane"></i> Sample Link 1</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#" class="nav-link">
-                                                <i class="icon-star"></i> Sample Link 1</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        <i class="icon-camera"></i> Sample Link 1</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        <i class="icon-link"></i> Sample Link 2</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        <i class="icon-pointer"></i> Sample Link 3</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a href="javascript:;" target="_blank" class="nav-link nav-toggle">
-                                <i class="icon-globe"></i> Arrow Toggle
-                                <span class="arrow"></span>
-                            </a>
-                            <ul class="sub-menu">
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        <i class="icon-tag"></i> Sample Link 1</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        <i class="icon-pencil"></i> Sample Link 1</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        <i class="icon-graph"></i> Sample Link 1</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="icon-bar-chart"></i> Item 3 </a>
-                        </li>
-                    </ul>
+                        <span class="title">错误日志</span>
+                    </router-link>
                 </li>
             </ul>
-            <!-- END SIDEBAR MENU -->
             <!-- END SIDEBAR MENU -->
         </div>
         <!-- END SIDEBAR -->

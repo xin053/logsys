@@ -49,14 +49,6 @@ export default {
 
 var TableDatatablesButtons = function() {
 
-    var initPickers = function () {
-        //init date pickers
-        $('.date-picker').datepicker({
-            rtl: App.isRTL(),
-            autoclose: true
-        });
-    }
-
     var initTable = function() {
         if (oTable == null) {
             var table = $('#sample');
@@ -171,7 +163,7 @@ var TableDatatablesButtons = function() {
                     //ajax请求数据
                     $.ajax({
                         type: "post",
-                        url: "http://127.0.0.1:5001/gateway",
+                        url: "http://127.0.0.1:5001/errorlog",
                         cache: false,  //禁用缓存
                         data: data,  //传入组装的参数
                         dataType: "json",
@@ -292,7 +284,6 @@ var TableDatatablesButtons = function() {
             if (!jQuery().dataTable) {
                 return;
             }
-            initPickers();
             initTable();
 
         }
