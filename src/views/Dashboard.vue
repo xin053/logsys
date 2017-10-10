@@ -6,7 +6,7 @@
     </h1> -->
     <!-- END PAGE TITLE-->
     <!-- END PAGE HEADER-->
-    <div class="alert alert-warning alert-dismissable">
+    <!-- <div class="alert alert-warning alert-dismissable">
         <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button>
         <strong>Warning!</strong> 这是一条提示消息,用于提示运维周报整体情况
     </div>
@@ -62,7 +62,7 @@
                 </div>
             </a>
         </div>
-    </div>
+    </div> -->
     <div class="row">
         <div class="col-md-12">
             <!-- BEGIN SAMPLE TABLE PORTLET-->
