@@ -98,7 +98,7 @@ export default {
             searchSpan: `<div class="row col-md-12 col-sm-12">
                             <div class="form-inline col-md-12 col-sm-12 form-group">
                                 <div class="col-md-2 col-sm-2 col-lg-2 input-group date date-picker margin-bottom-5" data-date-format="yyyy-mm-dd">
-                                    <input type="text" class="form-control form-filter input-sm" readonly id="log_date_from" placeholder="From">
+                                    <input type="text" class="form-control form-filter input-sm" id="log_date_from" placeholder="From">
                                     <span class="input-group-btn">
                                         <button class="btn btn-sm default" type="button">
                                             <i class="fa fa-calendar"></i>
@@ -106,7 +106,7 @@ export default {
                                     </span>
                                 </div>
                                 <div class="col-md-2 col-sm-2 col-lg-2 input-group date date-picker margin-bottom-5" data-date-format="yyyy-mm-dd">
-                                    <input type="text" class="form-control form-filter input-sm" readonly id="log_date_to" placeholder="To">
+                                    <input type="text" class="form-control form-filter input-sm" id="log_date_to" placeholder="To">
                                     <span class="input-group-btn">
                                         <button class="btn btn-sm default" type="button">
                                             <i class="fa fa-calendar"></i>
