@@ -138,6 +138,329 @@
                                     <td class="success"> 0 </td>
                                     <td> 周子新 </td>
                                 </tr>
+                                <tr>
+                                    <td> 天味 </td>
+                                    <td> 9月02号-9月08号 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td> 周子新 </td>
+                                </tr>
+                                <tr>
+                                    <td> 香飘飘 </td>
+                                    <td> 9月02号-9月08号 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td> 周子新 </td>
+                                </tr>
+                                <tr>
+                                    <td> 欢乐家 </td>
+                                    <td> 9月02号-9月08号 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td> 周子新 </td>
+                                </tr>
+                                <tr>
+                                    <td> 金正大 </td>
+                                    <td> 9月02号-9月08号 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td> 周子新 </td>
+                                </tr>
+                                <tr>
+                                    <td> 天地壹号 </td>
+                                    <td> 9月02号-9月08号 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td> 周子新 </td>
+                                </tr>
+                                <tr>
+                                    <td> 桃李面包 </td>
+                                    <td> 9月02号-9月08号 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td> 周子新 </td>
+                                </tr>
+                                <tr>
+                                    <td> 史丹利 </td>
+                                    <td> 9月02号-9月08号 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td> 周子新 </td>
+                                </tr>
+                                <tr>
+                                    <td> 马应龙 </td>
+                                    <td> 9月02号-9月08号 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td> 周子新 </td>
+                                </tr>
+                                <tr>
+                                    <td> 东鹏 </td>
+                                    <td> 9月02号-9月08号 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td> 周子新 </td>
+                                </tr>
+                                <tr>
+                                    <td> 红牛 </td>
+                                    <td> 9月02号-9月08号 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td> 周子新 </td>
+                                </tr>
+                                <tr>
+                                    <td> 晵盛 </td>
+                                    <td> 9月02号-9月08号 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td> 周子新 </td>
+                                </tr>
+                                <tr>
+                                    <td> 鼎湖 </td>
+                                    <td> 9月02号-9月08号 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td> 周子新 </td>
+                                </tr>
+                                <tr>
+                                    <td> 维他奶 </td>
+                                    <td> 9月02号-9月08号 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td> 周子新 </td>
+                                </tr>
+                                <tr>
+                                    <td> 光明 </td>
+                                    <td> 9月02号-9月08号 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td> 周子新 </td>
+                                </tr>
+                                <tr>
+                                    <td> 恒顺 </td>
+                                    <td> 9月02号-9月08号 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td> 周子新 </td>
+                                </tr>
+                                <tr>
+                                    <td> 南方食品 </td>
+                                    <td> 9月02号-9月08号 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td> 周子新 </td>
+                                </tr>
+                                <tr>
+                                    <td> 步阳 </td>
+                                    <td> 9月02号-9月08号 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td> 周子新 </td>
+                                </tr>
+                                <tr>
+                                    <td> 好来 </td>
+                                    <td> 9月02号-9月08号 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td> 周子新 </td>
+                                </tr>
+                                <tr>
+                                    <td> 中科 </td>
+                                    <td> 9月02号-9月08号 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 正常 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td class="success"> 0 </td>
+                                    <td> 周子新 </td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
@@ -175,6 +498,10 @@ table>thead>tr>th{
 
 table>tbody>tr>td{
     text-align: center;
+}
+
+table>tbody>tr>td.child{
+    text-align: left;
 }
 
 table>tfoot>tr>th{

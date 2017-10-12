@@ -159,8 +159,9 @@
                                     <i class="icon-lock"></i> Lock Screen </a>
                             </li>
                             <li>
-                                <a href="page_user_login_1.html">
-                                    <i class="icon-key"></i> Log Out </a>
+                                <router-link :to="{name: 'Login'}" class="nav-link ">
+                                    <i class="icon-key"></i> Log Out
+                                </router-link>
                             </li>
                         </ul>
                     </li>

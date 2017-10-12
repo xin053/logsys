@@ -43,16 +43,16 @@
                 <!-- <li class="heading">
                     <h3 class="uppercase">Home</h3>
                 </li> -->
-                <li class="nav-item start active open"> <!--注意其子菜单都要设置active open -->
+                <li class="nav-item" :class="$route.name === 'Dashboard' ? activeClass : '' "> <!--注意其子菜单都要设置active open -->
                     <router-link :to="{name: 'Dashboard'}" class="nav-link ">
                         <i class="icon-home"></i>
-                        <span class="title">主面板</span>
+                        <span class="title">巡检周报</span>
                     </router-link>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" :class="$route.name === 'ErrorLog' ? activeClass : '' ">
                     <router-link :to="{name: 'ErrorLog'}" class="nav-link ">
                         <i class="fa fa-file-o"></i>
-                        <span class="title">错误日志</span>
+                        <span class="title">日志分析</span>
                     </router-link>
                 </li>
             </ul>
@@ -67,7 +67,11 @@
 export default {
   data () {
     return {
+        activeClass: 'active'
     }
+  },
+  computed: {
+
   }
 }
 </script>

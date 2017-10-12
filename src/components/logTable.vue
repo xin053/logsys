@@ -1,4 +1,4 @@
-<template>
+<template id="test">
     <div class="portlet blue box">
         <div class="portlet-title">
             <div class="caption">
@@ -9,8 +9,8 @@
             <table class="table table-striped table-bordered table-hover" id="sample">
                 <thead>
                     <tr>
-                        <th v-for="(classname, header) in tableHeaders">
-                            <i v-bind:class="classname"></i>
+                        <th v-for="(classname, header) in tableHeaders" v-bind:class="classname.columnClass">
+                            <i v-bind:class="classname.icon"></i>
                             {{ header }}
                         </th>
                     </tr>
@@ -39,11 +39,28 @@ export default {
     mounted() {
         TableDatatablesButtons.init();
         addSearchSpan(this.searchSpan);
+        var that = this;
         $('#custom-search').on('click', function(){
             $('#sample').dataTable().fnDraw();
+            that.updateStatistics();
+        });
+
+        //搜索框监听回车事件
+        $("#searchSpan").bind("keydown",function(e){
+        // 兼容FF和IE和Opera
+        var theEvent = e || window.event;
+        var code = theEvent.keyCode || theEvent.which || theEvent.charCode;
+        if (code == 13) {
+            //回车执行查询
+                $('#sample').dataTable().fnDraw();
+                that.updateStatistics();
+            }
         });
     },
     methods: {
+        updateStatistics: function() {
+            this.$emit("updateStatistics");
+        }
     }
 }
 
@@ -108,6 +125,7 @@ var TableDatatablesButtons = function() {
                 retrieve: false,//是否重用已有的datatables
                 destroy: true,//是否重新创建datatables
                 select: true,
+                scrollX: false,
 
                 search: {
                     "caseInsensitive": false,
@@ -136,30 +154,38 @@ var TableDatatablesButtons = function() {
                 //columnDefs和columns共用大部分options
                 columnDefs: [
                     {
-                        "targets": 'nosort',  //目标未样式名未nosort的列
                         // "className": "my_class",//设置目标类的样式
-                        "orderable": false    //包含上样式名‘nosort’的禁止排序
+                        "orderable": false,    //包含上样式名‘nosort’的禁止排序
+                        "targets": 'nosort'  //目标未样式名未nosort的列
                     },
                     {
-                        "targets": 'nosearch',
-                        "searchable": false    //包含上样式名‘nosort’的禁止排序
+                        "searchable": false,    //包含上样式名‘nosort’的禁止排序
+                        "targets": 'nosearch'
+                    },
+                    {
+                        "responsivePriority": 10000000,
+                        "targets": 'columnHide'
+                    },
+                    {
+                        "className": "text-align-left",
+                        "targets": 'text-align-left'
                     }
                 ],
 
                 //https://datatables.net/manual/server-side
                 ajax: function(data, callback, settings) {
                     //封装请求参数
-                    data.query = {}
-                    data.query.log_date_from = $("#log_date_from").val()
-                    data.query.log_date_to = $("#log_date_to").val()
-                    data.query.enterprisenumber = $("#enterprise_number").val()
-                    data.query.enterprisename = $("#enterprise_name").val()
-                    data.query.ip = $("#ip").val()
-                    data.query.serverrole = $("#serverrole").val()
-                    data.query.type = $("#type").val()
-                    data.query.datasourceid = $("#datasource_id").val()
-                    data.querystr = "log_date_from log_date_to enterprisenumber enterprisename ip serverrole type datasourceid"
-                    console.log(data)
+                    data.query = {};
+                    data.query.log_date_from = $("#log_date_from").val();
+                    data.query.log_date_to = $("#log_date_to").val();
+                    data.query.enterprisenumber = $("#enterprise_number").val();
+                    data.query.enterprisename = $("#enterprise_name").val();
+                    data.query.ip = $("#ip").val();
+                    data.query.serverrole = $("#serverrole").val();
+                    data.query.type = $("#type").val();
+                    data.query.datasourceid = $("#datasource_id").val();
+                    data.querystr = "log_date_from log_date_to enterprisenumber enterprisename ip serverrole type datasourceid";
+                    console.log(data);
                     //ajax请求数据
                     $.ajax({
                         type: "post",
@@ -177,29 +203,58 @@ var TableDatatablesButtons = function() {
                 },
                 //列表表头字段
                 columns: [
-                    { "data": "logtime" },
-                    { "data": "enterprisenumber" },
-                    { "data": "enterprisename" },
+                    {
+                        "data": "logtime"
+                    },
+                    {
+                        "data": "enterprisenumber"
+                    },
+                    {
+                        "data": "enterprisename"
+                    },
                     {
                         "data": "ip",
+                        "defaultContent": "默认值",
+                        "title": "ip地址",
                         render: function(data, type, row) {
                             return type === "display" || type === "filter" ?
                                 data : data;
-                        },
-                        "defaultContent": "默认值",
-                        "title": "ip地址",
+                        }
                         // "type" : "date",//设置列的类型,来控制是否可以排序和过滤等
-                        // "visible": "false",//控制该列是否可见
+                        // "visible": false,//控制该列是否可见
                         // "width": "20%",//控制列的宽度
                     },
-                    { "data": "vmname" },
-                    { "data": "ostype" },
-                    { "data": "error" },
-                    { "data": "serverrole" },
-                    { "data": "type" },
-                    { "data": "gateversion" },
-                    { "data": "module" },
-                    { "data": "logcontent" }
+                    {
+                        "data": "vmname"
+                    },
+                    {
+                        "data": "ostype"
+                    },
+                    {
+                        "data": "level",
+                        render: function(data, type, row) {
+                            return data === "ERROR" ?
+                                "<span class='label label-danger'> " + data + " </span>" : data;
+                        }
+                    },
+                    {
+                        "data": "error"
+                    },
+                    {
+                        "data": "serverrole"
+                    },
+                    {
+                        "data": "type"
+                    },
+                    {
+                        "data": "gateversion"
+                    },
+                    {
+                        "data": "module"
+                    },
+                    {
+                        "data": "logcontent"
+                    }
                 ],
 
                 buttons: [
@@ -229,7 +284,7 @@ var TableDatatablesButtons = function() {
                 //"ordering": false, disable column ordering
                 colReorder: {
                     reorderCallback: function() {
-                        console.log('colReorder_callback');
+                        // console.log('colReorder_callback');
                     }
                 },
                 // rowReorder: true,
@@ -247,7 +302,7 @@ var TableDatatablesButtons = function() {
                 pagingType: "bootstrap_full_number",
 
                 //http://datatables.club/reference/option/dom.html
-                dom: "<'row' <'col-md-12'B>><'row'<'#searchspan'><'col-md-6 col-sm-12'f>r><'table-scrollable't><'row'<'col-md-2 col-sm-6 padding-top-4'l><'col-md-3 col-sm-6'i><'col-md-7 col-sm-12'p>>", // horizobtal scrollable datatable
+                dom: "<'row' <'col-md-12'B>><'row'<'#searchspan'><'col-md-6 col-sm-12'f>r><'table-scrollable't><'row'<'col-md-2 col-sm-6 padding-top-4'l><'col-md-3 col-sm-6'i><'col-md-7 col-sm-12'p>>" // horizobtal scrollable datatable
 
                 // Uncomment below line("dom" parameter) to fix the dropdown overflow issue in the datatable cells. The default datatable layout
                 // setup uses scrollable div(table-scrollable) with overflow:auto to enable vertical scroll(see: assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js). 
@@ -302,5 +357,8 @@ var addSearchSpan = function(htmlStr) {
 <style>
 .padding-top-4 {
     padding-top: 4px;
+}
+.text-align-left{
+    text-align: left;
 }
 </style>

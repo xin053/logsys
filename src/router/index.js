@@ -1,7 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Dashboard from '@/views/Dashboard'
+
+import Main from '@/views/Main'
 import Login from '@/views/Login'
+import Dashboard from '@/views/Dashboard'
 import LogsView from '@/views/logs/LogsView'
 import ErrorLog from '@/views/logs/ErrorLog'
 
@@ -12,23 +14,36 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Dashboard',
-      component: Dashboard
+      redirect: '/login',
     },
     {
       path: '/login',
       name: 'Login',
-      component: Login
+      components: {
+        login: Login
+      }
     },
     {
-      path: '/logs',
-      name: 'LogViews',
-      component: LogsView,
+      path: '/main',
+      name: 'Main',
+      component: Main,
       children: [
         {
-          path: 'ErrorLog',
-          name: 'ErrorLog',
-          component: ErrorLog
+          path: '/dashboard',
+          name: 'Dashboard',
+          component: Dashboard
+        },
+        {
+          path: '/logs',
+          name: 'LogViews',
+          component: LogsView,
+          children: [
+            {
+              path: 'ErrorLog',
+              name: 'ErrorLog',
+              component: ErrorLog
+            }
+          ]
         }
       ]
     }

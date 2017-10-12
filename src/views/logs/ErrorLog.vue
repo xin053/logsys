@@ -8,7 +8,7 @@
                 </div>
                 <div class="details">
                     <div class="number">
-                        <span data-counter="counterup" :data-value="1917">0</span>
+                        <span data-counter="counterup" :data-value="errorlogStatistics.gateway">{{ errorlogStatistics.gateway }}</span>
                     </div>
                     <div class="desc"> 网关日志错误数 </div>
                 </div>
@@ -21,7 +21,7 @@
                 </div>
                 <div class="details">
                     <div class="number">
-                        <span data-counter="counterup" data-value="12,5">0</span>
+                        <span data-counter="counterup" :data-value="errorlogStatistics.system">{{ errorlogStatistics.system }}</span>
                     </div>
                     <div class="desc"> 系统日志错误数 </div>
                 </div>
@@ -34,7 +34,7 @@
                 </div>
                 <div class="details">
                     <div class="number">
-                        <span data-counter="counterup" data-value="549">0</span>
+                        <span data-counter="counterup" :data-value="errorlogStatistics.database">{{ errorlogStatistics.database }}</span>
                     </div>
                     <div class="desc"> 数据库日志错误数 </div>
                 </div>
@@ -47,7 +47,7 @@
                 </div>
                 <div class="details">
                     <div class="number">
-                        <span data-counter="counterup" data-value="89">0</span>
+                        <span data-counter="counterup" :data-value="errorlogStatistics.web_sfa">{{ errorlogStatistics.web_sfa }}</span>
                     </div>
                     <div class="desc"> sfa与web后台日志错误数 </div>
                 </div>
@@ -66,13 +66,14 @@
             <strong>Warning!</strong> 这是一条提示消息
         </div>
 
-        <logTable :tableHeaders="tableHeaders" :searchSpan="searchSpan"></logTable>
+        <logTable :tableHeaders="tableHeaders" :searchSpan="searchSpan" @updateStatistics="updateStatistics"></logTable>
 
     </div>
 </div>
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 import logTable from '@/components/logTable'
 export default {
     components: {
@@ -82,20 +83,60 @@ export default {
         return {
             tipShow: false,
             tableHeaders: {
-                "日志时间": 'fa fa-briefcase',
-                "企业e号": 'fa fa-briefcase',
-                "企业名称": 'fa fa-briefcase',
-                "IP": 'fa fa-briefcase',
-                "虚拟机名称": 'fa fa-briefcase',
-                "操作系统类型": 'fa fa-briefcase',
-                "错误码": 'fa fa-briefcase',
-                "错误类型": 'fa fa-briefcase',
-                "服务": 'fa fa-briefcase',
-                "网关版本": 'fa fa-briefcase',
-                "调用接口": 'fa fa-briefcase',
-                "完整日志内容": 'fa fa-briefcase'
+                "日志时间": {
+                    icon: 'fa fa-briefcase',
+                    columnClass: ''
+                },
+                "企业e号": {
+                    icon: 'fa fa-briefcase',
+                    columnClass: ''
+                },
+                "企业名称": {
+                    icon: 'fa fa-briefcase',
+                    columnClass: ''
+                },
+                "IP": {
+                    icon: 'fa fa-briefcase',
+                    columnClass: ''
+                },
+                "虚拟机名称": {
+                    icon: 'fa fa-briefcase',
+                    columnClass: ''
+                },
+                "操作系统类型": {
+                    icon: 'fa fa-briefcase',
+                    columnClass: ''
+                },
+                "日志级别": {
+                    icon: 'fa fa-briefcase',
+                    columnClass: ''
+                },
+                "错误码": {
+                    icon: 'fa fa-briefcase',
+                    columnClass: ''
+                },
+                "错误类型": {
+                    icon: 'fa fa-briefcase',
+                    columnClass: ''
+                },
+                "服务": {
+                    icon: 'fa fa-briefcase',
+                    columnClass: ''
+                },
+                "网关版本": {
+                    icon: 'fa fa-briefcase',
+                    columnClass: ''
+                },
+                "调用接口": {
+                    icon: 'fa fa-briefcase',
+                    columnClass: ''
+                },
+                "完整日志内容": {
+                    icon: 'fa fa-briefcase',
+                    columnClass: 'columnHide text-align-left'
+                }
             },
-            searchSpan: `<div class="row col-md-12 col-sm-12">
+            searchSpan: `<div id="searchSpan" class="row col-md-12 col-sm-12">
                             <div class="form-inline col-md-12 col-sm-12 form-group">
                                 <div class="col-md-2 col-sm-2 col-lg-2 input-group date date-picker margin-bottom-5" data-date-format="yyyy-mm-dd">
                                     <input type="text" class="form-control form-filter input-sm" id="log_date_from" placeholder="From">
@@ -140,10 +181,21 @@ export default {
         }
     },
     mounted() {
-       $('.date-picker').datepicker({
+        $('.date-picker').datepicker({
             rtl: App.isRTL(),
             autoclose: true
         });
+        this.$store.dispatch('getErrorLogStatistics');
+    },
+    computed: {
+        ...mapGetters([
+            'errorlogStatistics'
+        ])
+    },
+    methods: {
+        updateStatistics: function() {
+            this.$store.dispatch('getErrorLogStatistics');
+        }
     }
 }
 </script>
