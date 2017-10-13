@@ -216,7 +216,7 @@ var TableDatatablesButtons = function() {
                     {
                         "data": "ip",
                         "defaultContent": "默认值",
-                        "title": "ip地址",
+                        // "title": "ip地址",
                         render: function(data, type, row) {
                             return type === "display" || type === "filter" ?
                                 data : data;

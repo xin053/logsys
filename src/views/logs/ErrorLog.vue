@@ -2,7 +2,7 @@
 <div>
     <div class="row">
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <a class="dashboard-stat dashboard-stat-v2 blue" href="#">
+            <a class="dashboard-stat dashboard-stat-v2 blue" href="#" @click.prevent="search('gateway')">
                 <div class="visual">
                     <i class="fa fa-comments"></i>
                 </div>
@@ -16,7 +16,7 @@
             </a>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <a class="dashboard-stat dashboard-stat-v2 red" href="#">
+            <a class="dashboard-stat dashboard-stat-v2 red" href="#" @click.prevent="search('system')">
                 <div class="visual">
                     <i class="fa fa-bar-chart-o"></i>
                 </div>
@@ -29,7 +29,7 @@
             </a>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <a class="dashboard-stat dashboard-stat-v2 green" href="#">
+            <a class="dashboard-stat dashboard-stat-v2 green" href="#" @click.prevent="search('database')">
                 <div class="visual">
                     <i class="fa fa-shopping-cart"></i>
                 </div>
@@ -42,7 +42,7 @@
             </a>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <a class="dashboard-stat dashboard-stat-v2 purple" href="#">
+            <a class="dashboard-stat dashboard-stat-v2 purple" href="#" @click.prevent="search('sfa')">
                 <div class="visual">
                     <i class="fa fa-globe"></i>
                 </div>
@@ -85,35 +85,35 @@ export default {
             tipShow: false,
             tableHeaders: {
                 "日志时间": {
-                    icon: 'fa fa-briefcase',
+                    icon: 'fa fa-calendar-times-o',
                     columnClass: ''
                 },
                 "企业e号": {
-                    icon: 'fa fa-briefcase',
+                    icon: 'fa fa-group',
                     columnClass: ''
                 },
                 "企业名称": {
-                    icon: 'fa fa-briefcase',
+                    icon: 'fa fa-group',
                     columnClass: ''
                 },
                 "IP": {
-                    icon: 'fa fa-briefcase',
+                    icon: 'fa fa-internet-explorer',
                     columnClass: ''
                 },
                 "虚拟机名称": {
-                    icon: 'fa fa-briefcase',
+                    icon: 'fa fa-server',
                     columnClass: ''
                 },
                 "操作系统类型": {
-                    icon: 'fa fa-briefcase',
+                    icon: 'fa fa-windows',
                     columnClass: ''
                 },
                 "日志级别": {
-                    icon: 'fa fa-briefcase',
+                    icon: 'fa fa-tags',
                     columnClass: ''
                 },
                 "错误码": {
-                    icon: 'fa fa-briefcase',
+                    icon: 'fa fa-bug',
                     columnClass: ''
                 },
                 "错误类型": {
@@ -121,19 +121,19 @@ export default {
                     columnClass: ''
                 },
                 "服务": {
-                    icon: 'fa fa-briefcase',
+                    icon: 'fa fa-flag',
                     columnClass: ''
                 },
                 "网关版本": {
-                    icon: 'fa fa-briefcase',
+                    icon: 'fa fa-star',
                     columnClass: ''
                 },
                 "调用接口": {
-                    icon: 'fa fa-briefcase',
+                    icon: 'fa fa-list',
                     columnClass: ''
                 },
                 "完整日志内容": {
-                    icon: 'fa fa-briefcase',
+                    icon: 'fa fa-file-text',
                     columnClass: 'columnHide text-align-left'
                 }
             },
@@ -165,10 +165,10 @@ export default {
                                     <input type="text" class="form-control form-filter input-sm" id="ip" placeholder="搜索IP">
                                 </div>
                                 <div class="input-group col-sm-1 col-lg-1">
-                                    <input type="text" class="form-control form-filter input-sm" id="serverrole" placeholder="错误类型">
+                                    <input type="text" class="form-control form-filter input-sm" id="serverrole" placeholder="搜索错误类型">
                                 </div>
                                 <div class="input-group col-sm-1 col-lg-1">
-                                    <input type="text" class="form-control form-filter input-sm" id="type" placeholder="服务">
+                                    <input type="text" class="form-control form-filter input-sm" id="type" placeholder="搜索服务">
                                 </div>
                                 <div class="input-group col-sm-1 col-lg-1">
                                     <input type="text" class="form-control form-filter input-sm" id="datasource_id" placeholder="搜索数据源id">
@@ -197,6 +197,10 @@ export default {
     methods: {
         updateStatistics: function() {
             this.$store.dispatch('getErrorLogStatistics');
+        },
+        search: function(serverrole) {
+            $('#serverrole').val(serverrole);
+            $('#custom-search').click();
         }
     }
 }
