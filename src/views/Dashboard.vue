@@ -476,18 +476,19 @@
 <script>
 import { mapGetters } from 'vuex'
 export default {
-  data () {
-    return {
+    data () {
+        return {
+        }
+    },
+    computed: {
+        ...mapGetters([
+        'statistics'
+        ])
+    },
+    mounted() {
+        // this.$store.dispatch('getStatisticsAPI')
+        this.$store.state.pagebarStore.navigation = "巡检周报"
     }
-  },
-  computed: {
-	...mapGetters([
-	  'statistics'
-	])
-  },
-  mounted() {
-	// this.$store.dispatch('getStatisticsAPI')
-  }
 }
 </script>
 

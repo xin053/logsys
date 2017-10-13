@@ -9,7 +9,7 @@
                     <p>Enter <strong>demo</strong>/<strong>demo</strong> as login and password.</p>
                 </div>
 
-                <form method="post" role="form" id="form_login">
+                <form method="post"  @submit.prevent="onSubmit()" role="form" id="form_login">
 
                     <div>
 
@@ -18,6 +18,10 @@
                         </div>
 
                     </div>
+                    <div v-if="loginError" class="alert alert-danger alert-dismissable">
+                        <!-- <button type="button" class="close" data-dismiss="alert" aria-hidden="true"></button> -->
+                        <strong>登陆失败</strong> 用户名或密码错误！
+                    </div>
                     <div class="form-group">
 
                         <div class="input-group">
@@ -25,7 +29,7 @@
                                 <i class="fa fa-user"></i>
                             </div>
 
-                            <input type="text" class="form-control" name="username" id="username" placeholder="Username" autocomplete="off" required
+                            <input v-model="username" type="text" class="form-control" name="username" id="username" placeholder="Username" autocomplete="off" required
                                 pattern="\w+" @oninvalid="validatelt(this,'请输入有效的用户名！')" />
                         </div>
 
@@ -38,18 +42,16 @@
                                 <i class="fa fa-key"></i>
                             </div>
 
-                            <input type="password" class="form-control" name="password" id="password" placeholder="Password" autocomplete="off" required/>
+                            <input v-model="password" type="password" class="form-control" name="password" id="password" placeholder="Password" autocomplete="off" required/>
                         </div>
 
                     </div>
 
                     <div class="form-group">
-                        <router-link :to="{name: 'Dashboard'}" class="nav-link ">
                             <button type="submit" class="btn btn-primary btn-block btn-login">
                                 <i class="fa fa-sign-in"></i>
                                 Login In
                             </button>
-                        </router-link>
                     </div>
 
                 </form>
@@ -70,6 +72,9 @@
 export default {
     data () {
         return {
+            username: null,
+            password: null,
+            loginError: false
         }
     },
     mounted() {
@@ -83,6 +88,14 @@ export default {
             } else {
                 inputelement.setCustomValidity("");
                 return true;
+            }
+        },
+        onSubmit: function() {
+            if ( this.username !== "123" || this.password !== "123") {
+                this.loginError = true;
+            }
+            else {
+                this.$router.push('Dashboard');
             }
         }
     }

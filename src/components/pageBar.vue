@@ -7,7 +7,7 @@
                 <i class="fa fa-circle"></i>
             </li> -->
             <li>
-                <span>主面板</span>
+                <span>{{ navigation }}</span>
             </li>
         </ul>
         <div class="page-toolbar">
@@ -41,11 +41,20 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 export default {
-  data () {
-    return {
+    data () {
+        return {
+        }
+    },
+    computed: {
+        ...mapGetters([
+        'navigation'
+        ])
+    },
+    mounted() {
+
     }
-  }
 }
 </script>
 

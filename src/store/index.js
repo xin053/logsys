@@ -6,6 +6,7 @@ Vue.use(Vuex)
 
 import dashboardStore from './modules/dashboardStore'
 import errorlogStore from './modules/errorlogStore'
+import pagebarStore from './modules/pagebarStore'
 
 const state = {
 
@@ -20,6 +21,7 @@ export default new Vuex.Store({
   getters,
   modules: {
     dashboardStore,
-    errorlogStore
+    errorlogStore,
+    pagebarStore
   }
 })

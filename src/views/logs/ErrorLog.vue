@@ -8,7 +8,8 @@
                 </div>
                 <div class="details">
                     <div class="number">
-                        <span data-counter="counterup" :data-value="errorlogStatistics.gateway">{{ errorlogStatistics.gateway }}</span>
+                        <!-- <span data-counter="counterup" data-value="0" :data-value="errorlogStatistics.gateway">{{ errorlogStatistics.gateway }}</span> -->
+                        <span>{{ errorlogStatistics.gateway }}</span>
                     </div>
                     <div class="desc"> 网关日志错误数 </div>
                 </div>
@@ -21,7 +22,7 @@
                 </div>
                 <div class="details">
                     <div class="number">
-                        <span data-counter="counterup" :data-value="errorlogStatistics.system">{{ errorlogStatistics.system }}</span>
+                        <span>{{ errorlogStatistics.system }}</span>
                     </div>
                     <div class="desc"> 系统日志错误数 </div>
                 </div>
@@ -34,7 +35,7 @@
                 </div>
                 <div class="details">
                     <div class="number">
-                        <span data-counter="counterup" :data-value="errorlogStatistics.database">{{ errorlogStatistics.database }}</span>
+                        <span>{{ errorlogStatistics.database }}</span>
                     </div>
                     <div class="desc"> 数据库日志错误数 </div>
                 </div>
@@ -47,7 +48,7 @@
                 </div>
                 <div class="details">
                     <div class="number">
-                        <span data-counter="counterup" :data-value="errorlogStatistics.web_sfa">{{ errorlogStatistics.web_sfa }}</span>
+                        <span>{{ errorlogStatistics.web_sfa }}</span>
                     </div>
                     <div class="desc"> sfa与web后台日志错误数 </div>
                 </div>
@@ -186,6 +187,7 @@ export default {
             autoclose: true
         });
         this.$store.dispatch('getErrorLogStatistics');
+        this.$store.state.pagebarStore.navigation = "日志分析"
     },
     computed: {
         ...mapGetters([

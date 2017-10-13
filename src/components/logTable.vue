@@ -23,6 +23,7 @@
 </template>
 
 <script>
+import { baseUrl } from '@/config'
 export default {
     props: {
         tableHeaders: {
@@ -189,7 +190,7 @@ var TableDatatablesButtons = function() {
                     //ajax请求数据
                     $.ajax({
                         type: "post",
-                        url: "http://127.0.0.1:5001/errorlog",
+                        url: baseUrl + "/errorlog",
                         cache: false,  //禁用缓存
                         data: data,  //传入组装的参数
                         dataType: "json",
@@ -294,11 +295,11 @@ var TableDatatablesButtons = function() {
                 ],
 
                 lengthMenu: [
-                    [5, 10, 20, 50, 100, 150, -1],
-                    [5, 10, 20, 50, 100, 150, "All"] // change per page values here
+                    [5, 10, 15, 20, 50, 100, 150, -1],
+                    [5, 10, 15, 20, 50, 100, 150, "All"] // change per page values here
                 ],
                 // set the initial value
-                pageLength: 10,
+                pageLength: 15,
                 pagingType: "bootstrap_full_number",
 
                 //http://datatables.club/reference/option/dom.html
